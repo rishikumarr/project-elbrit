@@ -1,28 +1,4 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
   box-sizing: border-box;
@@ -30,13 +6,85 @@ body {
   margin: 0;
 }
 
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 62.5%;
+}
+
 a {
   color: inherit;
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+:root{
+  --primaryBg: #fff;
+  --secondaryBg: #e2f5fb;
+  --tertiaryBg: #17414f;
+
+  --primaryTxt: #17414f;
+  --secondaryTxt: #727272;
+  --tertiaryTxt: #003569;
+
+  --testing: 1px solid #000;
+}
+
+body {
+  font-family: "Roboto Condensed", serif;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+button{
+  font-family: inherit;
+  border: none;
+  outline: none;
+}
+
+ul{
+  list-style: none;
+}
+
+.testing{
+  border: 1px solid #000;
+}
+
+.fnt-1{
+  font-size: 12em;
+}
+
+.fnt-1-5{
+  font-size: 5em;
+}
+
+.fnt-2{
+  font-size: 3em;
+}
+
+.fnt-3{
+  font-size: 2.2em;
+}
+
+.fnt-3-5{
+  font-size: 1.6em;
+}
+
+.fnt-4{
+  font-size: 1.5em;
+}
+
+.fnt-5{
+  font-size: 1.25em;
+}
+
+.fnt-semibold{
+  font-weight: 500;
+}
+
+.fnt-light{
+  font-weight: 400;
 }
